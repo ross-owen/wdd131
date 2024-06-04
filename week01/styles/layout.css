@@ -9,17 +9,18 @@ header {
 }
 
 nav {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     grid-template-columns: repeat(4, 1fr);
 }
 
 nav a {
+    flex: 25%;
+    text-align: center;
     text-decoration: none;
-    justify-self: center;
-    align-self: center;
 }
 
-.main-content {
+main {
     grid-column: 1 / 2;
     border: 1px solid black;
 }
