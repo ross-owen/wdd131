@@ -1,5 +1,5 @@
-const copyrightYear = document.querySelector("#currentYear");
-const lastModified = document.querySelector("#lastModified");
+const copyrightYear = document.querySelector("#current-year");
+const lastModified = document.querySelector("#last-modified");
 
 copyrightYear.innerHTML = `` + new Date().getFullYear();
 lastModified.innerHTML = `Last Modification: ` + document.lastModified;
