@@ -98,3 +98,23 @@ footer p {
 .bio article {
     padding-right: 1rem;
 }
+
+.bio img {
+    width: 150px;
+    align-self: center;
+}
+
+.bio-2 {
+    padding: 1rem;
+    display: flex;
+}
+
+.bio-2 article {
+    padding-left: 1rem;
+}
+
+.bio-2 img {
+    width: auto;
+    height: 150px;
+    align-self: center;
+}
