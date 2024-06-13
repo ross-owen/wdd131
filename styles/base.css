@@ -21,7 +21,7 @@ header {
 }
 
 header h1 {
-    color: var(--accent1-color);
+    color: #fff;
 }
 
 nav {
@@ -42,7 +42,7 @@ nav ul {
 }
 
 nav a {
-    color: var(--secondary-color);
+    color: #000;
     text-decoration: none;
     padding: 15px;
     display: block;
@@ -58,7 +58,7 @@ footer {
     width: 100%;
     text-align: center;
     background-color: var(--primary-color);
-    color: var(--secondary-color);
+    color: #fff;
     margin-top: 1em;
     padding: 1px;
 }
@@ -87,7 +87,7 @@ footer p {
     border-top-right-radius: 10px;
     margin: 0;
     padding: 0.5rem;
-    color: var(--accent1-color);
+    color: #fff;
 }
 
 .bio {
