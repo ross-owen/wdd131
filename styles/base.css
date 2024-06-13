@@ -4,7 +4,6 @@
     --accent1-color: #83c5be;
     --accent2-color: #ffddd2;
     --subtle-color: #edf6f9;
-    --background-color: rgba(0, 109, 119, .8)
 }
 
 body {
@@ -24,13 +23,6 @@ header h1 {
     color: #fff;
 }
 
-nav {
-    text-align: left;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    display: grid;
-}
 
 nav ul {
     margin: 0;
@@ -57,14 +49,14 @@ nav a:hover {
 footer {
     width: 100%;
     text-align: center;
-    background-color: var(--primary-color);
-    color: #fff;
+    background-color: #000;
     margin-top: 1em;
     padding: 1px;
 }
 
 footer p {
     margin: 0.5em;
+    color: #fff;
 }
 
 .main-home {
@@ -75,14 +67,14 @@ footer p {
 }
 
 .card {
-    border: 1px solid var(--background-color);
+    border: 1px solid var(--primary-color);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
 .card h2 {
     text-align: center;
-    background-color: var(--background-color);
+    background-color: var(--primary-color);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     margin: 0;
