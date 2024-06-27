@@ -1,0 +1,48 @@
+@media (min-width: 600px) {
+    .place-weather h2::after {
+        content: '⛅';
+        padding-left: 1rem;
+    }
+    
+    .hero {
+        position: relative;
+    }
+    
+    .hero hr {
+        display: none;
+    }
+    
+    .hero h2 {
+        background-color: var(--accent2a-color);
+        color: var(--accent1-color);
+        width: 100%;
+        margin-top: 0.5rem;
+        margin-left: -1rem;
+        padding: 0.5rem;
+        align-self: center;
+        border: 1px solid black;
+        font-weight: normal;
+    }
+    
+    .place-data, .place-weather {
+        position: absolute;
+        background-color: var(--accent1a-color);
+        padding-bottom: 1rem;
+    }
+    
+    .place-data {
+        top: 1rem;
+        left: 1rem;
+        min-width: 25%;
+    }
+    
+    .place-weather {
+        bottom: 1rem;
+        right: 1rem;
+        min-width: 20%;
+    }
+
+    .place-weather img {
+        display: none;
+    }
+}

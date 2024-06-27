@@ -49,3 +49,7 @@ footer {
     font-size: smaller;
     text-align: left;
 }
+
+li::marker {
+    
+}
