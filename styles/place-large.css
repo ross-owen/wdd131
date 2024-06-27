@@ -13,12 +13,12 @@
     }
     
     .hero h2 {
-        background-color: var(--accent2a-color);
+        background-color: var(--secondary-color);
         color: var(--accent1-color);
         width: 100%;
         margin-top: 0.5rem;
         margin-left: -1rem;
-        padding: 0.5rem;
+        padding: 0.5rem 0.5rem 0.5rem 1rem;
         align-self: center;
         border: 1px solid black;
         font-weight: normal;
