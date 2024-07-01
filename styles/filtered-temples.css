@@ -1,0 +1,154 @@
+:root {
+    --primary-color: #006d77;
+    --secondary-color: #e29578;
+    --accent1-color: #83c5be;
+    --accent2-color: #ffddd2;
+    --subtle-color: #edf6f9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1333px;
+    margin: auto;
+    font-family: Montserrat, sans-serif;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    background-color: var(--primary-color);
+    padding-top: 1px;
+}
+
+header h1 {
+    color: #fff;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-size: 1.4rem;
+}
+
+.navigation {
+    position: relative;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: var(--accent2-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    color: #000;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.navigation a:hover {
+    background-color: var(--subtle-color);
+}
+
+.open li {
+    display: block;
+}
+
+.active {
+    background-color: var(--secondary-color);
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 0.25rem;
+    right: 0.5rem;
+}
+
+#menu::before {
+    color: #fff;
+    content: "☰";
+    padding: 5px;
+}
+
+#menu.open::before {
+    content: "❎";
+    border: none;
+    padding: 0;
+}
+
+main h2 {
+    display: none;
+}
+
+.temple-pictures {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+    grid-gap: 1rem;
+}
+
+.temple-pictures img {
+    margin-top: 1rem;
+    width: 400px;
+    height: 250px;
+    box-shadow: 3px 3px 10px #000;
+}
+
+.temple-listing {
+    background-color: var(--subtle-color);
+    margin: auto;
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+.temple-listing h3 {
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.temple-detail {
+    text-align: center;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+.detail-label {
+    font-variant: small-caps;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+    margin-top: 1em;
+    padding: 1px;
+}
+
+footer p {
+    margin: 0.5em;
+    color: #fff;
+}
