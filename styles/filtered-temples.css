@@ -100,7 +100,10 @@ header h1 {
 }
 
 main h2 {
-    display: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    background-color: var(--accent1-color);
 }
 
 .temple-pictures {

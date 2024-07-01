@@ -88,6 +88,7 @@ const oldButton = document.querySelector('#old');
 const newButton = document.querySelector('#new');
 const largeButton = document.querySelector('#large');
 const smallButton = document.querySelector('#small');
+const filterIndicator = document.querySelector('#filter-indicator');
 
 hamburgerButton.addEventListener('click', () => {
     mainNav.classList.toggle('open');
@@ -98,30 +99,35 @@ homeButton.addEventListener("click", () => {
     removeActive();
     showTemples(temples);
     homeButton.classList.add('active');
+    filterIndicator.innerHTML = 'Home';
 });
 
 oldButton.addEventListener("click", () => {
     removeActive();
     showTemples(temples.filter((temple) => getYearFromDedication(temple) < 1900));
     oldButton.classList.add('active');
+    filterIndicator.innerHTML = 'Old';
 });
 
 newButton.addEventListener("click", () => {
     removeActive();
     showTemples(temples.filter((temple) => getYearFromDedication(temple) > 2000));
     newButton.classList.add('active');
+    filterIndicator.innerHTML = 'New';
 });
 
 largeButton.addEventListener("click", () => {
     removeActive();
     showTemples(temples.filter((temple) => temple.area > 90000));
     largeButton.classList.add('active');
+    filterIndicator.innerHTML = 'Large';
 });
 
 smallButton.addEventListener("click", () => {
     removeActive();
     showTemples(temples.filter((temple) => temple.area < 10000));
     smallButton.classList.add('active');
+    filterIndicator.innerHTML = 'Small';
 });
 
 function removeActive() {
