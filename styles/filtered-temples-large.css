@@ -45,4 +45,8 @@
         grid-gap: 1rem;
         margin: 1rem 0 0 0;
     }
+    
+    .temple-card {
+        margin-bottom: 0;
+    }
 }
