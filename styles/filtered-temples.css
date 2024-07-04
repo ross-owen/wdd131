@@ -116,7 +116,7 @@ main h2 {
 }
 
 .temple-listings {
-    margin-top: 1rem;
+    margin: 1rem 1rem 0 1rem;
 }
 
 .temple-card {
@@ -125,6 +125,10 @@ main h2 {
     border: 1px solid #ddd;
     text-align: center;
     margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
 }
 
 .temple-card h3 {

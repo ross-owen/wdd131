@@ -24,11 +24,6 @@
         margin-right: 0.4rem;
     }
 
-    .navigation li {
-        border-bottom: none;
-        width: 100%;
-    }
-
     .navigation ul {
         flex-direction: row;
         position: unset;
@@ -37,8 +32,10 @@
         width: unset;
         justify-content: space-around;
     }
-
+    
     .navigation li {
+        border-bottom: none;
+        width: 100%;
         display: block;
     }
     
