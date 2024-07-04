@@ -166,7 +166,7 @@ function showTemples(templeList) {
             <span class="detail-label">Size:</span>
             <span class="detail-value">${temple.area} sq ft</span>
         </div>
-        <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
+        <img src="${temple.imageUrl}" alt="${temple.templeName}" width="400" height="250" loading="lazy">
         `;
         templePictures.appendChild(templeCard);
     });    
