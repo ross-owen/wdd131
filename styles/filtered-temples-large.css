@@ -1,4 +1,4 @@
-@media (min-width: 37.5em) {
+@media (min-width: 44.7rem) {
     header h1 {
         color: #fff;
         padding-top: 1rem;
@@ -21,8 +21,14 @@
 
     .navigation {
         position: unset;
+        margin-right: 0.4rem;
     }
-    
+
+    .navigation li {
+        border-bottom: none;
+        width: 100%;
+    }
+
     .navigation ul {
         flex-direction: row;
         position: unset;
@@ -34,5 +40,15 @@
 
     .navigation li {
         display: block;
+    }
+    
+    .temple-listings {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+    }
+
+    .temple-card {
+        margin: 0;
     }
 }

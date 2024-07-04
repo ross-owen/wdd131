@@ -146,13 +146,13 @@ function getYearFromDedication(temple) {
 }
 
 function showTemples(templeList) {
-    let templePictures = document.querySelector('.temple-pictures');
+    let templePictures = document.querySelector('.temple-listings');
     templePictures.innerHTML = '';
     templeList.forEach((temple) => {
-        let templeDiv = document.createElement('div');
-        templeDiv.id = temple.templeName.replace(' ', '-').toLowerCase();
-        templeDiv.className = 'temple-listing';
-        templeDiv.innerHTML = `
+        let templeCard = document.createElement('section');
+        templeCard.id = temple.templeName.replace(' ', '-').toLowerCase();
+        templeCard.className = 'temple-card';
+        templeCard.innerHTML = `
         <h3>${temple.templeName}</h3>
         <div class="temple-detail">
             <span class="detail-label">Location:</span>
@@ -168,7 +168,7 @@ function showTemples(templeList) {
         </div>
         <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
         `;
-        templePictures.appendChild(templeDiv);
+        templePictures.appendChild(templeCard);
     });    
 }
 

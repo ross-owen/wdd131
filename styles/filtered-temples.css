@@ -23,6 +23,9 @@ header {
     width: 100%;
     background-color: var(--primary-color);
     padding-top: 1px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 header h1 {
@@ -42,24 +45,24 @@ header h1 {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    background-color: var(--accent2-color);
+    background-color: var(--accent1-color);
     display: flex;
     flex-direction: column;
     justify-content: unset;
     position: absolute;
-    top: 0;
+    top: 22px;
     right: 0;
     width: 150px;
 }
 
 .navigation li {
     display: none;
+    border-bottom: 1px solid var(--primary-color);
 }
 
 .navigation a {
-    color: #000;
     text-decoration: none;
-    padding: 15px;
+    padding: 0.88rem;
     display: block;
     text-align: center;
     font-size: 1.2rem;
@@ -67,6 +70,7 @@ header h1 {
 
 .navigation a:hover {
     background-color: var(--subtle-color);
+    color: #000;
 }
 
 .open li {
@@ -74,7 +78,12 @@ header h1 {
 }
 
 .active {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+header a {
+    color: #000;
 }
 
 #menu {
@@ -100,41 +109,38 @@ header h1 {
 }
 
 main h2 {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    margin: 0;
+    padding: 0.75rem;
     text-align: center;
     background-color: var(--accent1-color);
 }
 
-.temple-pictures {
+.temple-listings {
     margin-top: 1rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
-    grid-gap: 1rem;
 }
 
-.temple-pictures img {
-    margin-top: 1rem;
-    width: 400px;
-    height: 250px;
-    box-shadow: 3px 3px 10px #000;
-}
-
-.temple-listing {
+.temple-card {
     background-color: var(--subtle-color);
-    margin: auto;
     padding: 1rem;
     border: 1px solid #ddd;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
-.temple-listing h3 {
-    text-align: center;
+.temple-card h3 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
 
+.temple-card img {
+    margin-top: 1rem;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    box-shadow: 3px 3px 10px #000;
+}
+
 .temple-detail {
-    text-align: center;
     width: 100%;
     font-size: 0.9rem;
 }
