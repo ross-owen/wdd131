@@ -1,0 +1,216 @@
+/*top, right, bottom, and left*/
+
+:root {
+    --primary-color: #117c13;
+    --secondary2-color: #2D7BBC;
+    --secondary3-color: #C02942;
+    --accent1-color: #EDFDED;
+    --accent2-color: #EFF5FB;
+    --accent3-color: #FBEEF0;
+    --background1-color: #ffffff;
+    --primary-trans-color: rgba(17, 124, 19, 0.8);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1000px;
+    margin: auto;
+    font-family: "Mulish", sans-serif;
+    background-color: var(--background1-color);
+}
+
+header {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    text-align: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+}
+
+h1 {
+    padding: 1rem;
+    text-align: center;
+}
+
+h2 {
+    background-color: var(--secondary2-color);
+    color: #fff;
+    text-align: center;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+h3 {
+    background-color: var(--accent3-color);
+    color: var(--secondary3-color);
+}
+
+h2, h3, h4, h5, h6 {
+    padding: 0.5rem;
+}
+
+footer {
+    text-align: center;
+}
+
+section {
+    border: 1px solid var(--accent3-color);
+    margin-bottom: 0.5rem;
+}
+
+p {
+    padding: 0.5rem;
+}
+
+p.color-palette {
+    margin: 0 2rem 0 2rem;
+}
+
+p.color-palette span {
+    padding: 0.5rem;
+    display: block;
+    width: 15rem;
+}
+
+span.primary-color {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+span.secondary2-color {
+    background-color: var(--secondary2-color);
+    color: #ffffff;
+}
+
+span.secondary3-color {
+    background-color: var(--secondary3-color);
+    color: #ffffff;
+}
+
+span.accent1-color {
+    background-color: var(--accent1-color);
+}
+
+span.accent2-color {
+    background-color: var(--accent2-color);
+}
+
+span.accent3-color {
+    background-color: var(--accent3-color);
+}
+
+span.background1-color {
+    background-color: var(--background1-color);
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    text-align: center;
+    background-color: var(--accent1-color);
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navigation li {
+    border-bottom: none;
+    width: 100%;
+    display: block;
+}
+
+.navigation a {
+    text-decoration: none;
+    padding: 0.88rem;
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.navigation a:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.active {
+    background-color: var(--primary-trans-color);
+    color: #fff !important;
+}
+
+.audience ul {
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+.typography h1 {
+    text-align: unset;
+    padding: 0.5rem;
+    margin: unset;
+    font-size: 2em;
+    font-weight: bold;
+    color: unset;
+    background-color: unset;
+}
+
+.typography h2 {
+    text-align: unset;
+    padding: 0.5rem;
+    margin: unset;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: unset;
+    background-color: unset;
+}
+
+.typography h3 {
+    text-align: unset;
+    padding: 0.5rem;
+    margin: unset;
+    font-size: 1em;
+    font-weight: bold;
+    color: unset;
+    background-color: unset;
+}
+
+.typography h4 {
+    text-align: unset;
+    padding: 0.5rem;
+    margin: unset;
+    font-size: 1em;
+    font-weight: normal;
+    color: unset;
+    background-color: unset;
+}
+
+.typography h5 {
+    text-align: unset;
+    padding: 0.5rem;
+    margin: unset;
+    font-size: 0.75em;
+    font-weight: bold;
+    color: unset;
+    background-color: unset;
+}
+
+.typography h6 {
+    text-align: unset;
+    padding: 0.5rem;
+    margin: unset;
+    font-size: 0.75em;
+    font-weight: normal;
+    color: unset;
+    background-color: unset;
+}
+
