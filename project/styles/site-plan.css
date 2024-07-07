@@ -214,3 +214,10 @@ span.background1-color {
     background-color: unset;
 }
 
+hr {
+    margin: 3rem 0 3rem 0;
+}
+
+img {
+    max-width: 1000px;
+}
