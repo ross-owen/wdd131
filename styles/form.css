@@ -7,7 +7,7 @@
     --secondary-color: #83c5be;
     --subtle-color: #eee;
     --accent-color: #fff;
-    --required-color: #f66;
+    --required-color: #940000;
     --form-max-width: 800px;
 }
 
@@ -125,7 +125,6 @@ footer {
 }
 
 .optional {
-    color: var(--secondary-color);
     font-style: italic;
 }
 
