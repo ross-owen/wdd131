@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --grass-color: #117c13;
+    --grass-accent-color: #edfded;
+    --grass-trans-color: rgba(17, 124, 19, 0.9);
+    --blues-color: #2d7bbc;
+    --whites-color: #ffffff;
+    --reds-color: #c02942;
+    --sky-color: #eff5fb;
+    --sand-color: #ebd2ad;
+}
+
+body {
+    max-width: 1200px;
+    margin: auto;
+    font-family: "Mulish", sans-serif;
+}
+
+header {
+    padding: 0.5rem;
+}
+
+.title-bar {
+    color: var(--grass-color);
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title-bar img {
+    width: auto;
+    height: 37px;
+    margin: 0.5rem 1rem;
+}
+
+.title-bar h1 {
+    text-transform: uppercase;
+}
+
+nav {
+    position: relative;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: var(--blues-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    position: absolute;
+    top: 8px;
+    right: -8px;
+    width: 150px;
+}
+
+nav li {
+    display: none;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0.88rem;
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: var(--sky-color);
+    color: black;
+}
+
+nav.open li {
+    display: block;
+}
+
+.active {
+    background-color: var(--sky-color);
+    color: black;
+}
+
+.menu-icon {
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+}
+
+.menu-icon::before {
+    color: black;
+    content: "☰";
+    padding: 5px;
+}
+
+.menu-icon.open::before {
+    content: "❎";
+    border: none;
+    padding: 0;
+}
+
+main {
+    background-color: var(--grass-color);
+    padding: 0.5rem;
+}
+
+main p.info {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    margin-bottom: 0.5rem;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+footer {
+    background-color: var(--grass-color);
+    padding: 0.5rem;
+    margin-top: -0.25rem;
+}
+
+footer img {
+    height: 2.5rem;
+    width: auto;
+}
+
+.footer-wrapper {
+    width: 100%;
+    background-color: var(--sand-color);
+    color: var(--blues-color);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.copyright img {
+    padding-right: 1rem;
+}
+
+.social-media-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

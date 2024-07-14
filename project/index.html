@@ -3,16 +3,63 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Ross L. Owen</title>
+    <title>Par None: A Beginner's Guid to Golf</title>
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Ross L. Owen | Final Project">
     <meta name="author" content="Ross L. Owen">
+
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+    <link rel="stylesheet" href="styles/thought.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+
+    <script src="scripts/nav.js" defer></script>
 </head>
 <body>
 <header>
+    <div class="title-bar">
+        <img src="images/logo.svg" alt="Par None" width="250" height="205" loading="lazy">
+        <h1>Par&nbsp;None</h1>
+    </div>
+    <button class="menu-icon" title="menu"></button>
+    <nav class="navigation">
+        <ul>
+            <li><a id="home" href="#HOME" class="active">Home</a></li>
+            <li><a id="tips" href="#TIPS">Tips</a></li>
+            <li><a id="resources" href="#RESOURCES">Resources</a></li>
+            <li><a id="find-course" href="#FIND">Find&nbsp;Course</a></li>
+        </ul>
+    </nav>
 </header>
 <main>
+    <p class="info">Go beyond the swing! Par None unlocks the course, decodes golf talk, and guides you through
+        etiquette. Hit the green with confidence - avoid faux pas; or at least learn how to pronounce it!</p>
+    <div class="hero">
+        <picture>
+            <source srcset="images/hero-1200.webp" media="(min-width: 801px)">
+            <source srcset="images/hero-800.webp" media="(min-width: 601px)">
+            <source srcset="images/hero-600.webp" media="(min-width: 401px)">
+            <img src="images/hero-400.webp" alt="Happy Golfer" width="400" height="224" loading="lazy">
+        </picture>
+        <div class="thought-blue">Hazards?</div>
+        <div class="thought-white">What do the colors mean?</div>
+        <div class="thought-red">What's a wedge?</div>
+    </div>
 </main>
 <footer>
+    <div class="footer-wrapper">
+        <div class="copyright">
+            <img src="images/icons/course.svg" alt="Hit the course" width="32" height="32" loading="lazy">
+            <p>&copy;<span id="current-year"></span>&nbsp;Par&nbsp;None&nbsp;| a&nbsp;BYU&nbsp;Pathway&nbsp;project</p>
+        </div>
+        <div class="social-media-wrapper">
+            <img src="images/icons/facebook.svg" alt="Facebook" width="57" height="57" loading="lazy">
+            <img src="images/icons/instagram.svg" alt="Instagram" width="17" height="17" loading="lazy">
+            <img src="images/icons/tiktok.svg" alt="Tiktok" width="16" height="16" loading="lazy">
+        </div>
+    </div>
 </footer>
 </body>
 </html>

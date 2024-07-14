@@ -1,0 +1,41 @@
+@media (min-width: 750px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        background-color: var(--grass-color);
+    }
+    
+    header h1 {
+    }
+
+    .menu-icon {
+        display: none;
+    }
+    
+    .title-bar {
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+
+    nav {
+        position: unset;
+        padding-right: 0.5rem;
+        border-radius: 0 0.5rem 0.5rem 0;
+        background-color: var(--blues-color);
+    }
+
+    nav ul {
+        flex-direction: row;
+        position: unset;
+        top: unset;
+        right: unset;
+        width: unset;
+        justify-content: space-around;
+    }
+
+    nav li {
+        border-bottom: none;
+        width: 100%;
+        display: block;
+    }
+}

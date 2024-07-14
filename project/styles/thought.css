@@ -1,0 +1,134 @@
+.thought-blue {
+    display:flex;
+    color: white;
+    background-color:var(--blues-color);
+    padding:20px;
+    border-radius:30px;
+    min-width:150px;
+    max-width:180px;
+    min-height:40px;
+    margin:20px;
+    position:absolute;
+    top: 12%;
+    left: 30%;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    z-index: 0;
+}
+.thought-blue:before,
+.thought-blue:after {
+    content:"";
+    background-color:var(--blues-color);
+    border-radius:50%;
+    display:block;
+    position:absolute;
+    z-index:-1;
+}
+.thought-blue:before {
+    width:44px;
+    height:44px;
+    top:-12px;
+    left:28px;
+    box-shadow:-50px 30px 0 -12px var(--blues-color);
+}
+.thought-blue:after {
+    bottom:-10px;
+    right:26px;
+    width:30px;
+    height:30px;
+    box-shadow:40px -34px 0 0 var(--blues-color),
+    -28px -6px 0 -2px var(--blues-color),
+    -24px 17px 0 -6px var(--blues-color),
+    -5px 25px 0 -10px var(--blues-color);
+}
+
+.thought-white {
+    display:flex;
+    color: black;
+    background-color:var(--whites-color);
+    padding:20px;
+    border-radius:30px;
+    min-width:150px;
+    max-width:180px;
+    min-height:40px;
+    margin:20px;
+    position:absolute;
+    top: 28%;
+    right: 10%;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    z-index: 0;
+}
+.thought-white:before,
+.thought-white:after {
+    content:"";
+    background-color:var(--whites-color);
+    border-radius:50%;
+    display:block;
+    position:absolute;
+    z-index:-1;
+}
+.thought-white:before {
+    width:44px;
+    height:44px;
+    top:-12px;
+    left:28px;
+    box-shadow:-50px 30px 0 -12px var(--whites-color);
+}
+.thought-white:after {
+    bottom:-10px;
+    right:26px;
+    width:30px;
+    height:30px;
+    box-shadow:40px -34px 0 0 var(--whites-color),
+    -68px -6px 0 -2px var(--whites-color),
+    -84px 17px 0 -6px var(--whites-color),
+    -100px 25px 0 -10px var(--whites-color);
+}
+
+.thought-red {
+    display:flex;
+    color: white;
+    background-color: var(--reds-color);
+    padding:20px;
+    border-radius:30px;
+    min-width:150px;
+    max-width:180px;
+    min-height:40px;
+    margin:20px;
+    position:absolute;
+    bottom: 21%;
+    left: 7%;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    z-index: 0;
+}
+.thought-red:before,
+.thought-red:after {
+    content:"";
+    background-color: var(--reds-color);
+    border-radius:50%;
+    display:block;
+    position:absolute;
+    z-index:-1;
+}
+.thought-red:before {
+    width:44px;
+    height:44px;
+    top:-12px;
+    left:28px;
+    box-shadow:-50px 30px 0 -12px  var(--reds-color);
+}
+.thought-red:after {
+    bottom:-10px;
+    right:26px;
+    width:30px;
+    height:30px;
+    box-shadow:40px -34px 0 0  var(--reds-color),
+    -28px -6px 0 -2px  var(--reds-color),
+    -24px 17px 0 -6px  var(--reds-color),
+    -5px 25px 0 -10px  var(--reds-color);
+}
