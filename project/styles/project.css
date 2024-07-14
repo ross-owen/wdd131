@@ -11,6 +11,7 @@
     --reds-color: #c02942;
     --sky-color: #eff5fb;
     --sand-color: #ebd2ad;
+    --red-accent-color: #df7288;
 }
 
 body {
@@ -148,7 +149,7 @@ footer img {
 .footer-wrapper {
     width: 100%;
     background-color: var(--sand-color);
-    color: var(--blues-color);
+    color: black;
     border-radius: 0.5rem;
     padding: 0.5rem;
     display: grid;
