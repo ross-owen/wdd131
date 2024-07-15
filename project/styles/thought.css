@@ -55,13 +55,13 @@
 
 .thought-white {
     --thought-color: var(--whites-color);
-    top: 22%;
-    left: 65%;
+    top: 27%;
+    left: 61%;
 }
 
 .thought-red {
     --thought-color: var(--reds-color);
     color: white;
-    top: 50%;
+    top: 48%;
     left: 5%;
 }
