@@ -49,19 +49,19 @@
 
 .thought-blue {
     --thought-color: var(--blues-color);
-    top: 5%;
+    top: 8%;
     left: 20%;
 }
 
 .thought-white {
     --thought-color: var(--whites-color);
-    top: 25%;
+    top: 22%;
     left: 65%;
 }
 
 .thought-red {
     --thought-color: var(--reds-color);
     color: white;
-    top: 65%;
+    top: 50%;
     left: 5%;
 }

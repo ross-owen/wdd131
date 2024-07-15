@@ -135,6 +135,37 @@ main p.info {
     border-radius: 0.5rem;
 }
 
+.cta {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: 10%;
+    min-width: 10rem;
+    background-color: var(--grass-accent-color);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 1rem;
+    align-items: center;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.cta a {
+    color: black;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: var(--sand-color);
+    border: 1px solid var(--sand-color);
+    border-radius: 0.5rem;
+}
+.cta a:hover {
+    color: var(--grass-color);
+    border: 1px solid var(--grass-color);
+}
+
 footer {
     background-color: var(--grass-color);
     padding: 0.5rem;
