@@ -17,6 +17,8 @@
 
     <script src="scripts/get-dates.js" defer></script>
     <script src="scripts/nav.js" defer></script>
+    <script src="scripts/tips-q-and-a.js" defer></script>
+    <script src="scripts/tips.js" defer></script>
 </head>
 <body>
 <header>
@@ -24,7 +26,7 @@
         <img src="images/logo.svg" alt="Par None" width="250" height="205" loading="lazy">
         <h1>Par&nbsp;None</h1>
     </div>
-    <button class="menu-icon" title="menu"></button>
+    <button class="menu-icon" title="menu" defau></button>
     <nav class="navigation">
         <ul>
             <li><a id="home" href="index.html">Home</a></li>
@@ -34,8 +36,15 @@
         </ul>
     </nav>
 </header>
-<main>
-    <h2>Tips</h2>
+<main class="tips-main">
+    <fieldset class="search-bar">
+        <legend>Filter</legend>
+        <label>
+            Search Tips: <input id="search-text" type="text">
+        </label>
+        <a class="button" id="search-button" href="#">Filter</a>
+    </fieldset>
+    <div id="tips-wrapper"></div>
 </main>
 <footer>
     <div class="footer-wrapper">

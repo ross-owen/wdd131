@@ -4,7 +4,7 @@ function getRandomIndex(topRange) {
 }
 
 function getTipAbbreviation() {
-    return tips[getRandomIndex(tips.length - 1)].abbreviation;
+    return tipsQAndA[getRandomIndex(tipsQAndA.length - 1)].abbreviation;
 }
 
 document.querySelector("#thought1").innerHTML = getTipAbbreviation();
