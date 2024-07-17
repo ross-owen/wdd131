@@ -7,6 +7,7 @@
     --grass-accent-color: #edfded;
     --grass-trans-color: rgba(17, 124, 19, 0.9);
     --blues-color: #2d7bbc;
+    --blues-trans-color: rgba(45, 123, 188, 0.5);
     --whites-color: #ffffff;
     --reds-color: #c02942;
     --sky-color: #eff5fb;
@@ -241,4 +242,27 @@ div#tips-wrapper {
 div#tips-wrapper ul {
     margin: 0.5rem 2rem;
     padding-bottom: 1rem;
+}
+
+.resource-links img {
+    height: auto;
+    width: 100%;
+}
+
+.resources-main {
+    background-color: var(--blues-trans-color);
+    border: 0.5rem solid var(--grass-color);
+}
+
+.resources-main h2 {
+    padding: 1rem;
+}
+
+.resource-links {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 150px);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 3rem;
 }
