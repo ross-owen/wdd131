@@ -12,7 +12,7 @@
     --reds-color: #c02942;
     --sky-color: #eff5fb;
     --sand-color: #ebd2ad;
-    --red-accent-color: #df7288;
+    --red-accent-color: #f4c8cf;
 }
 
 body {
@@ -265,4 +265,9 @@ div#tips-wrapper ul {
     justify-content: center;
     align-items: center;
     grid-gap: 3rem;
+}
+
+.find-course-main {
+    background-color: var(--red-accent-color);
+    border: 0.5rem solid var(--grass-color);
 }

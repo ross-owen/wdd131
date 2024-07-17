@@ -1,32 +1,32 @@
 /*top, right, bottom, and left*/
 
-:root {
-    --primary-color: #117c13;
-    --secondary2-color: #2D7BBC;
-    --secondary3-color: #C02942;
-    --accent1-color: #EDFDED;
-    --accent2-color: #EFF5FB;
-    --accent3-color: #FBEEF0;
-    --background1-color: #ffffff;
-    --primary-trans-color: rgba(17, 124, 19, 0.9);
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+    --grass-color: #117c13;
+    --blues-color: #2d7bbc;
+    --reds-color: #c02942;
+    --grass-accent-color: #edfded;
+    --sky-color: #eff5fb;
+    --sand-color: #ebd2ad;
+    --grass-trans-color: rgba(17, 124, 19, 0.9);
+    --blue-trans-color: rgba(45, 123, 188, 0.5);
+    --red-accent-color: #f4c8cf;
+    --whites-color: #ffffff;
 }
 
 body {
     max-width: 1000px;
     margin: auto;
     font-family: "Mulish", sans-serif;
-    background-color: var(--background1-color);
+    background-color: var(--whites-color);
 }
 
 header {
-    background-color: var(--accent1-color);
-    color: var(--primary-color);
+    background-color: var(--grass-accent-color);
+    color: var(--grass-color);
     text-align: center;
     width: 100%;
     display: grid;
@@ -40,15 +40,15 @@ h1 {
 }
 
 h2 {
-    background-color: var(--secondary2-color);
+    background-color: var(--blues-color);
     color: #fff;
     text-align: center;
     margin: 0.5rem 0 0.5rem 0;
 }
 
 h3 {
-    background-color: var(--accent3-color);
-    color: var(--secondary3-color);
+    background-color: var(--grass-accent-color);
+    color: var(--reds-color);
 }
 
 h2, h3, h4, h5, h6 {
@@ -60,7 +60,7 @@ footer {
 }
 
 section {
-    border: 1px solid var(--accent3-color);
+    border: 1px solid var(--sand-color);
     margin-bottom: 0.5rem;
 }
 
@@ -79,34 +79,38 @@ p.color-palette span {
 }
 
 span.primary-color {
-    background-color: var(--primary-color);
+    background-color: var(--grass-color);
     color: #ffffff;
 }
 
 span.secondary2-color {
-    background-color: var(--secondary2-color);
+    background-color: var(--blues-color);
     color: #ffffff;
 }
 
 span.secondary3-color {
-    background-color: var(--secondary3-color);
+    background-color: var(--reds-color);
     color: #ffffff;
 }
 
 span.accent1-color {
-    background-color: var(--accent1-color);
+    background-color: var(--grass-accent-color);
 }
 
 span.accent2-color {
-    background-color: var(--accent2-color);
+    background-color: var(--sky-color);
 }
 
 span.accent3-color {
-    background-color: var(--accent3-color);
+    background-color: var(--red-accent-color);
 }
 
 span.background1-color {
-    background-color: var(--background1-color);
+    background-color: var(--sand-color);
+}
+
+span.background2-color {
+    background-color: var(--whites-color);
 }
 
 .navigation {
@@ -114,13 +118,14 @@ span.background1-color {
     grid-template-columns: 1fr 2fr;
     align-items: center;
     text-align: center;
-    background-color: var(--accent1-color);
+    background-color: var(--grass-accent-color);
 }
 
 .navigation ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-color: var(--blues-color);
 }
 
 .navigation li {
@@ -135,17 +140,17 @@ span.background1-color {
     display: block;
     text-align: center;
     font-size: 1.2rem;
-    color: #000;
+    color: white;
 }
 
 .navigation a:hover {
-    background-color: var(--primary-color);
-    color: #fff;
+    background-color: var(--sky-color);
+    color: black;
 }
 
 .active {
-    background-color: var(--primary-trans-color);
-    color: #fff !important;
+    background-color: var(--sky-color);
+    color: black !important;
 }
 
 .audience ul {
@@ -160,8 +165,8 @@ span.background1-color {
     margin: unset;
     font-size: 2em;
     font-weight: bold;
-    color: unset;
-    background-color: unset;
+    color: var(--grass-color);
+    background-color: var(--grass-accent-color);
 }
 
 .typography h2 {
