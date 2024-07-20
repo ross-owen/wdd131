@@ -231,6 +231,7 @@ a#search-button {
     height: 2rem;
     padding: 0.5rem;
     font-size: 1.2rem;
+    max-width: 12rem;
 }
 
 div#tips-wrapper {
