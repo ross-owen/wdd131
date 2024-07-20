@@ -17,6 +17,7 @@
 
     <script src="scripts/get-dates.js" defer></script>
     <script src="scripts/nav.js" defer></script>
+    <script src="scripts/find-course.js" defer></script>
 </head>
 <body>
 <header>
@@ -35,7 +36,42 @@
     </nav>
 </header>
 <main class="find-course-main">
-    <h2>Find A Course</h2>
+    <h2>Find Your Perfect Course: Tee Up for Fun!"</h2>
+    <div class="find-course-filter">
+        <fieldset>
+            <legend>Filter Criteria</legend>
+            <div class="filter-items">
+                <label>
+                    <span>Skill Level: </span>
+                    <select id="skill-level" autofocus>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </label>
+                <label class="budget">
+                    <span>Budget: </span>
+                    <input type="range" id="budget" name="budget" min="0" max="125" step="25" list="budget-values">
+                    <datalist id="budget-values">
+                        <option value="0" label="<--"></option>
+                        <option value="25" label="$25"></option>
+                        <option value="50" label="$50"></option>
+                        <option value="75" label="$75"></option>
+                        <option value="100" label="$100"></option>
+                        <option value="125" label="-->"></option>
+                    </datalist>
+                </label>
+                <label>
+                    <span>Location (zip code): </span>
+                    <input id="postal-code" type="text">
+                </label>
+                <a class="button center" id="search-button" href="#">Search</a>
+            </div>
+        </fieldset>
+    </div>
+    <div id="search-results" class="find-course-results">
+        
+    </div>
 </main>
 <footer>
     <div class="footer-wrapper">

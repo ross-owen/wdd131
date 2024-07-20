@@ -256,6 +256,8 @@ div#tips-wrapper ul {
 
 .resources-main h2 {
     padding: 1rem;
+    background-color: var(--whites-color);
+    border-radius: 0.5rem;
 }
 
 .resource-links {
@@ -270,4 +272,94 @@ div#tips-wrapper ul {
 .find-course-main {
     background-color: var(--red-accent-color);
     border: 0.5rem solid var(--grass-color);
+}
+
+.find-course-main h2 {
+    padding: 1rem;
+    background-color: var(--whites-color);
+    border-radius: 0.5rem;
+}
+
+.find-course-filter {
+    background-color: var(--grass-accent-color);
+    margin-top: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.find-course-filter fieldset {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.find-course-filter input, select {
+    height: 2rem;
+    font-size: 1.2em;
+    width: 180px;
+}
+
+.find-course-filter label {
+    padding: 1rem 0;
+}
+
+.find-course-filter span {
+    display: block;
+}
+
+.filter-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.find-course-filter fieldset legend {
+    padding: 0 0.5rem;
+}
+
+.budget datalist {
+    font-size: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    width: 180px;
+}
+
+.center {
+    text-align: center;
+}
+
+.find-course-results table {
+    background-color: var(--whites-color);
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.find-course-results th, td {
+    text-align: left;
+    padding: 0.25em;
+}
+
+.find-course-results th {
+    background-color: var(--grass-color);
+    color: white;
+}
+
+.find-course-results tr:nth-child(even) {
+    background-color: var(--grass-accent-color);
+}
+
+.error {
+    background-color: var(--whites-color);
+    color: var(--reds-color);
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    margin-top: 0.5rem;
+    border-radius: 0.5rem;
 }
